@@ -1,4 +1,6 @@
 # Cloudflare Tunnel Installer (unofficial)
+Install and set up Cloudflare Tunnel on a Linux machine, without having to access Cloudflare Dashboard.  
+This is particularly useful for automated workflows.  
 
 ## How to Use
 ### Prepare
