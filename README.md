@@ -1,5 +1,5 @@
 # Cloudflare Tunnel Installer (unofficial)
-Install and set up Cloudflare Tunnel on a Linux machine, without having to access Cloudflare Dashboard.  
+Install and set up Cloudflare Tunnel (remotely-managed) on a Linux machine, without having to access Cloudflare Dashboard.  
 This is particularly useful for automated workflows.  
 
 ## How to Use
@@ -22,3 +22,10 @@ wget https://raw.githubusercontent.com/Srgr0/cloudflaretunnel_installer/main/ins
 sudo chmod +x ./installer.sh
 sudo ./installer.sh
 ```
+
+### FAQ
+#### What is the difference between remotely-managed tunnel and locally-managed tunnel?
+The difference is in how the tunnels are managed. For remotely-managed tunnels, the tunnel configuration is stored in cloudflare and can be viewed and modified from the Cloudflare Zero Trust Dashboard. For locally-managed tunnels, the tunnel configuration is stored in a file on the local server. Remotely-managed tunnel, which allows both domain and tunnel management on the Dashboard, is recommended.  
+
+#### What is the difference between creating a tunnel in Dashboard and using this script?
+The Dashboard and this script work in the same way and are not significantly different. However, while the dashboard requires manual user operation, this script can automate its execution.
