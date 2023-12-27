@@ -19,6 +19,9 @@ response=$(curl -s -X GET -w "%{http_code}" \
            -H "Content-Type: application/json" \
            "https://api.cloudflare.com/client/v4/user/tokens/verify");
 
+# install jq
+apt install jq -y
+
 if [ "$response" -ne 200 ]; then
     echo "Invalid API key.";
     exit 1;
